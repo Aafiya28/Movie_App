@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "axios": "^1.6.5"
+  },
+  "name": "movie_app",
+  "description": "Movie App",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/Aafiya28/Movie_App)"
+  },
+  "keywords": [
+    "Movies"
+  ],
+  "author": "Aafiya Afroz",
+  "license": "ISC"
+}
