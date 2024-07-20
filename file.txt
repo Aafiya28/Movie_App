@@ -1,0 +1,104 @@
+My own code of index.js file.
+
+
+import axios from "axios";
+
+const parentsEle = document.querySelector('.main');
+
+const URL = "movies.json";
+
+const getMovie = async (url) => {
+    try {
+        const response = await axios.get(url);
+        console.log(response.data); // accessing the data from the response
+        return response.data; // Return the movie data
+    } catch (error) {
+        console.error('Error fetching movie data:', error);
+        throw error; // Re-throw the error to handle it in the calling code if needed
+    }
+};
+
+// Call the getMovie function
+// getMovie(URL)
+//     .then(movies => {
+//         console.log(movies); // Log the movie data
+//     })
+//     .catch(error => {
+//         console.error('Error in retrieving movies:', error);
+//     });
+
+let movies = await getMovie(URL);
+console.log(movies);
+
+const createElement = (element) => document.createElement(element);
+
+//Function to create movie cards
+const createMovieCard = (movies) => {
+    for (let movie of movies){
+        //Creating parents container
+        const cardContainer = createElement('div')
+        cardContainer.classList.add('card', 'shadow');
+
+        //Creating image container
+        const imgContainer = createElement('div')
+        imgContainer.classList.add('card-image-container');
+
+        //Creating img container
+        const imgEle =createElement('img');
+        imgEle.classList.add('card-img');
+        imgEle.setAttribute('src', movie.img_link);
+        imgEle.setAttribute('alt', movie.name);
+        imgContainer.appendChild(imgEle);
+
+        cardContainer.appendChild(imgContainer);
+
+        //Creating card details container
+        const movieDetails = createElement('div')
+        movieDetails.className.add('movie-details');
+
+        //card title
+        const titleEle = createElement('p')
+        titleEle.classList.add('title');
+        titleEle.innerText = movie.name;
+        movieDetails.appendChild(titleEle);
+
+        //card genre
+        const genreEle = createElement('p')
+        genreEle.classList.add('genre');
+        genreEle.innerText = `Genre: ${movie.genre}`;
+        movieDetails.appendChild(genreEle);
+
+        //rating and length container
+        const movieRating = createElement('div')
+        movieRating.classList.add('rating');
+        
+        //start rating component
+        const ratings = createElement('div')
+        ratings.classList.add('star-rating');
+
+        //star icon
+        const starIcon = createElement('span')
+        starIcon.classList.add('material-symbols-outlined')
+        starIcon.innerText = 'grade';
+        ratings.appendChild(starIcon);
+
+        //ratings
+        const ratingValue = createElement('span')
+        ratingValue.innerText = movie.rating;
+        ratings.appendChild(ratingValue);
+
+        //movies duration
+        const length = createElement('p')
+        length.innerText = `${movie.duration} mins`;
+
+
+        movieRating.appendChild(length);
+        movieRating.appendChild(ratings);
+        movieDetails.appendChild(movieRating)
+        cardContainer.appendChild(movieDetails)
+
+        parentsEle.append(cardContainer);
+    }
+};
+
+createElement(movies);

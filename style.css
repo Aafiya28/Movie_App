@@ -1,6 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
-/* RESET CSS**/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+
+/* RESET CSS **/
+
 * {
     margin: 0;
     padding: 0;
@@ -8,53 +10,97 @@
 }
 
 :root {
-    --bg-color: #191919;
-    --card-bg: #060e78;
-    --text-color:#afafaf;
+    --bg-color: #000099 ;
+    --card-bg: #f9fdfe;
+    --text-color-primary: #090a0a;
+    --text-color-secondary:var(--card-bg)
 }
 
 body {
     background-color: var(--bg-color);
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .header {
-    padding: 2rem;
+    padding: 2rem 5rem 1rem 6rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    background-color: var(--bg-color);
 }
 
 .heading-1 {
     font-size: 3rem;
-    color: var(--text-color);
+    color:var(--text-color-secondary);
+    text-decoration-line: underline;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 10px;
+}
+
+.input {
+    background-color: transparent;
+    border: 2px solid var(--card-bg);
+    border-radius: 4px;
+    padding: 8px;
+    color: var(--text-color-secondary);
+    font-size: 1.25rem;
+    width: 25rem;
+}
+
+.rating-select {
+    background-color: transparent;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 1.25rem;
+    border: 2px solid var(--card-bg);
+    color: var(--text-color-secondary);
+}
+
+.option {
+    background-color: var(--bg-color);
 }
 
 .main {
-    /* padding: 4rem 8rem; */
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+    padding: 10rem 4rem 3rem 9rem;
+    border: 2px solid black;
 }
 
 .card {
     width: 18rem;
-    color:var(--text-color);
+    border-radius: 4px;
     background-color: var(--card-bg);
-    border-radius : 4px solid white;
+}
+
+.card:hover {
+    /* scale: 1.1; */
+    transition: scale 0.5s;
 }
 
 .card-image-container {
     width: 100%;
-    height: 20rem;
+    height: 18rem;
 }
 
 .card-image {
     width: 100%;
     height: 100%;
-    padding: 13px 13px 0px 13px;
-    object-fit:cover;
-    position:relative;
+    object-fit: contain;
+    position: center center;
 }
 
 .movie-details {
-    margin: 5px 5px;
-    color: var(--text-color) ;
-    padding: 5px;
+    margin: 10px 0;
+    color: var(--text-color-primary);
+    padding: 8px;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -68,7 +114,13 @@ body {
     font-size: 0.875rem;
 }
 
-.rating {
+.ratings {
     display: flex;
     justify-content: space-between;
+}
+
+.star-rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }

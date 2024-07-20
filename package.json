@@ -1,11 +1,13 @@
 {
   "dependencies": {
-    "axios": "^1.6.5"
+    "axios": "^1.6.8"
   },
   "name": "movie_app",
   "description": "Movie App",
   "version": "1.0.0",
+  "proxy": "https://movies-app.prakashsakari.repl.co",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -1,0 +1,114 @@
+[
+        {
+        "id": 1,
+        "title": "The Shawshank Redemption",
+        "img_link":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREMOJZvFPdlCqrmzkXVEo1zaAxSys2kc47fg&s",
+        "duration": 132,
+        "director": "Frank Darabont",
+        "genre": ["Drama"],
+        "rating": 9.3
+        },
+        {
+        "id": 2,
+        "title": "The Godfather",
+        "img_link":"https://m.media-amazon.com/images/S/pv-target-images/7d2081c07a6afa338191e68c73e1959f7761b53cf9b691d59926aa0ef89874e5.jpg",
+        "duration": 120,
+        "director": "Francis Ford Coppola",
+        "genre": ["Crime", "Drama"],
+        "rating": 9.2
+        },
+        {
+        "id": 3,
+        "title": "The Dark Knight",
+        "img_link":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhi1arS70w_kXQTF-GctH3Vz_vXSLK3ZxHVQ&s",
+        "duration": 123,
+        "director": "Christopher Nolan",
+        "genre": ["Action", "Crime", "Drama"],
+        "rating": 9.1
+        },
+        {
+        "id": 4,
+        "title": "The Dark Tower",
+        "img_link":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv-zr1xqQQbjyJet8IlzBQEBkVI7ENE6LIBw&s",
+        "duration": 130,
+        "director": "Quentin Tarantino",
+        "genre": ["Adventure", "Action"],
+        "rating": 8.9
+        },
+        {
+        "id": 5,
+        "title": "Forrest Gump",
+        "img_link":"https://m.media-amazon.com/images/S/pv-target-images/2d0c9e38968936e6711c7fb2bc7895b82d8bb9178b5a854e14dffa4b17b88487.jpg",
+        "duration": 132,
+        "director": "Robert Zemeckis",
+        "genre": ["Drama", "Romance"],
+        "rating": 8.8
+        },
+        {
+        "id": 6,
+        "title": "Crocodile Dundee",
+        "img_link":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTg0MTU1MTg4NF5BMl5BanBnXkFtZTgwMDgzNzYxMTE@._V1_SX300.jpg",
+        "duration": "97",
+        "director": "Peter Faiman",
+        "genre": ["Adventure", "Comedy"],
+        "rating": 7.7
+        },
+        {
+        "id": 7,
+        "title": "Ratatouille",
+        "img_link":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTMzODU0NTkxMF5BMl5BanBnXkFtZTcwMjQ4MzMzMw@@._V1_SX300.jpg",
+        "duration":"111",
+        "director":"Brad Bird, Jan Pinkava",
+        "genre": ["Animation","Comedy","Family"],
+        "rating":7.7
+        },
+        {
+        "id": 8,
+        "title": "Valkyrie",
+        "img_link": "https://ia.media-imdb.com/images/M/MV5BMTg3Njc2ODEyN15BMl5BanBnXkFtZTcwNTAwMzc3NA@@._V1_SX300.jpg",
+        "duration": "121",
+        "director": "Bryan Singer",
+        "genre": ["Drama", "History","Thriller"],
+        "rating": 8.5
+        },
+        {
+        "id": 9,
+        "title": "Sid and Nancy",
+        "img_link": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjExNjA5NzY4M15BMl5BanBnXkFtZTcwNjQ2NzI5NA@@._V1_SX300.jpg",
+        "year": "1986",
+        "duration": "112",
+        "genre": ["Biography","Drama","Music"],
+        "director": "Alex Cox",
+        "rating":8.8
+        },
+        {
+        "id": 10,
+        "title": "Black Swan",
+        "year": "2010",
+        "img_link": "https://images-na.ssl-images-amazon.com/images/M/MV5BNzY2NzI4OTE5MF5BMl5BanBnXkFtZTcwMjMyNDY4Mw@@._V1_SX300.jpg",
+        "duration": "108",
+        "genre": ["Drama","Thriller"],
+        "director": "Darren Aronofsky",
+        "rating":7.7
+        },
+        {
+        "id": 11,
+        "title": "Inception",
+        "year": "2010",
+        "img_link": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg",
+        "duration": "148",
+        "genre": ["Action","Adventure","Sci-Fi"],
+        "director": "Christopher Nolan",
+        "rating":7.9
+        },
+        {
+        "id": 12,
+        "title": "The Deer Hunter",
+        "img_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpPIjZcwu561K32dF80XhhxWeRkvYUfGctjQ&s",
+        "year": "1978",
+        "duration": "183",
+        "genre": ["Drama","War"],
+        "director": "Michael Cimino",
+        "rating":7.9
+        }
+]
